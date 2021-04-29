@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Audio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .button {
+                background-color: #4CAF50;
+                border:none;
+                color:white;
+                padding:15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .button2 {background-color: #008CBA;}
+            .button3 {background-color: #f44336;} 
+            .button4 {background-color: #e7e7e7; color: black;} 
+            .button5 {background-color: #555555;} 
+        </style>
+    </head>
+    <body>
+        <h1>Sound Machine</h1>
+        <button class="button" onclick="playAudio('bird')">
+            <audio id="bird">
+                <source src="bird.wav" type="audio/wav">
+            </audio>
+            Bird
+        </button>
+        <button class="button button2" onclick="playAudio('cat')">
+            <audio id="cat">
+                <source src="cat.wav" type="audio/wav">
+            </audio>
+            Cat
+        </button>
+        <button class="button button3" onclick="playAudio('dog')">
+            <audio id="dog">
+                <source src="dog.wav" type="audio/wav">
+            </audio>
+            Dog
+        </button>
+        <button class="button button4" onclick="playAudio('geese')">
+            <audio id="geese">
+                <source src="geese.wav" type="audio/wav">
+            </audio>
+            Geese
+        </button>
+        <button class="button button5" onclick="playAudio('lion')">
+            <audio id="lion">
+                <source src="lion.wav" type="audio/wav">
+            </audio>
+            Lion
+        </button>
+        <br><br><br><br>
+        <a href="../../Homework.html">Go Back To HomeWork List</a>
+        <script>
+            function playAudio(filename){
+                var audio = document.getElementById(filename);
+                audio.play();
+            }
+        </script>
+    </body>
+</html>
