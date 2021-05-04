@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Speech Recognition</title>
+        
+    </head>
+    <body>
+        <h1>Speech Recognition</h1>
+        <h2>Instrutions</h2>
+        <ul>
+            <li>Say a name of the object to see the object on the screen.</li>
+            <li>Say "Help" to tell them "Say a name of the object on the screen. Say about, to hear about the program."</li>
+            <li>Say "About" to hear my name and Copyright with this year.</li>
+        </ul>
+        <h3>Here are following words you can say:</h3>
+        <ul>
+            <li>Cat</li>
+            <li>Dog</li>
+            <li>Lion</li>
+            <li>Goose</li>
+            <li>Bird</li>
+        </ul>
+        <div>
+            <canvas id="canvas" width ="800" height="600">
+                <script src="speech-recognition.js"></script>
+            </canvas>
+            <br/>
+            <p id="output" style="border: 1px solid black; display: inline-block; width: 48rem; padding: 1rem">Speech Recognition results...</p>
+            <br/>
+            <button id="speak" type="button">Speak</button>
+        </div>   
+        </br>
+        <a href="../../Homework.html">Go Back To HomeWork List</a>
+    </body>
+</html>
